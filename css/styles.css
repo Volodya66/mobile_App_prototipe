@@ -7,8 +7,14 @@
     rgba(0, 197, 235, 1),
     rgba(181, 68, 254, 1)
   );
-  --linear-gradient-card: linear-gradient(
+  --gradient-right-bottom: linear-gradient(
     to right bottom,
+    rgba(181, 68, 254, 0.5),
+    rgba(0, 197, 235, 0.5)
+  );
+
+  --gradient-left-top: linear-gradient(
+    to left top,
     rgba(181, 68, 254, 0.5),
     rgba(0, 197, 235, 0.5)
   );
@@ -149,6 +155,76 @@ body {
   display: flex;
   align-items: center;
 }
+
+/* mobile-menu */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 80;
+  padding: 34px 20px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: auto;
+
+  background-color: #07081c;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 52px;
+}
+
+.logo-menu {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.21;
+  color: var(--white-color);
+}
+
+.button-close-menu {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-navigation-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 36px;
+}
+
+.text-linear {
+  background: var(--linear-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-navigation {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: center;
+
+  color: var(--white-color);
+}
+
+/*mobile-menu */
 
 /* hero */
 
@@ -298,11 +374,21 @@ body {
 }
 
 .lists-people {
-  background-image: var(--linear-gradient-card);
   background-color: var(--background-section);
   border-radius: 15px;
   backdrop-filter: blur(17.5px);
 }
+
+.lists-people:nth-child(1),
+.lists-people:nth-child(4) {
+  background-image: var(--gradient-right-bottom);
+}
+
+.lists-people:nth-child(2),
+.lists-people:nth-child(3) {
+  background-image: var(--gradient-left-top);
+}
+
 .people-card {
   border-radius: 10px;
   overflow: hidden;
@@ -500,6 +586,7 @@ body {
 
 .footer {
   background-color: var(--background-section);
+  border-top: 1px solid var(--white-color);
 }
 
 .section-footer {

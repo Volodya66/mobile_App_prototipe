@@ -35,11 +35,41 @@
             <li class=""><a href="#contact" class="navigation">CONTACT</a></li>
           </ul>
         </nav>
-        <button class="button-header" type="button">
+        <button class="button-header js-open-menu" type="button">
           <svg class="modal-burger" width="24" height="14">
             <use href="./images/sprite.svg#burger"></use>
           </svg>
         </button>
+      </div>
+
+      <div class="mobile-menu js-menu-container">
+        <header class="header-menu">
+          <a class="logo-menu" href="./index.html">Mobileapp</a>
+          <button type="button" class="button-close-menu js-close-menu">
+            <svg width="19.2" height="19.2">
+              <use href="./images/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </header>
+        <nav>
+          <ul class="list-navigation-page">
+            <li class="nav-menu">
+              <a href=" #home" class="text-navigation text-linear">HOME</a>
+            </li>
+            <li class="nav-menu">
+              <a href="#feautures" class="text-navigation">FEATURES</a>
+            </li>
+            <li class="nav-menu">
+              <a href="#team" class="text-navigation">TEAM</a>
+            </li>
+            <li class="nav-menu">
+              <a href="#testimonials" class="text-navigation">TESTIMONIALS</a>
+            </li>
+            <li class="nav-menu">
+              <a href="#contact" class="text-navigation">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <!-- header -->
@@ -380,7 +410,7 @@
                 type="text"
                 name="person name"
                 placeholder="Name"
-                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄёЁ' ]+"
                 required
               />
             </label>
@@ -415,13 +445,15 @@
     <!-- section5 -->
 
     <!-- footer -->
-    <section class="footer section-footer">
+    <footer class="footer section-footer">
       <div class="container-footer">
         <p class="text-footer">
           &#169; 2019 GoIteens Template. All Rights Reserved
         </p>
       </div>
-    </section>
+    </footer>
     <!-- footer -->
+
+    <script src="./js/modal-menu.js"></script>
   </body>
 </html>
