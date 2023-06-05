@@ -552,6 +552,7 @@ body {
   /* hero */
 
   .hero-section {
+    overflow: hidden;
     padding-top: 182px;
     padding-bottom: 127px;
   }
@@ -593,33 +594,39 @@ body {
     max-width: 219px;
   }
 
+  .wrapper-content-hero {
+    position: relative;
+    z-index: 1;
+  }
+
   .button-download.button-gradient {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    z-index: 1;
-  }
-
-  /* .container-photo {
-    display: none;
-  } */
-
-  .container-photo {
-    /* position: absolute;
-    bottom: 18px;
-    right: -132px; */
+    /* z-index: 1; */
   }
 
   .photo-hero-display {
     position: absolute;
     bottom: 44px;
     right: -100px;
+
+    /* top: 94px; */
+
+    max-width: 395px;
+    max-height: 430px;
+    overflow: hidden;
   }
 
   .photo-hero-mobil {
     position: absolute;
     bottom: 18px;
     right: -132px;
+
+    /* top: 94px; */
+    max-width: 422px;
+    max-height: 456px;
+    overflow: hidden;
   }
 
   /* hero */
