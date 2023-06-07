@@ -76,7 +76,7 @@
 
     <!-- hero -->
     <section id="home" class="hero-section">
-      <div class="container">
+      <div class="container container-content-hero">
         <div class="wrapper-content-hero">
           <h1 class="title-hero">Introducing Mobileapp</h1>
           <h2 class="title-list">Download our mobile app today!</h2>
@@ -108,22 +108,28 @@
           </ul>
           <button class="button-download button-gradient">Download</button>
         </div>
-
-        <img
-          class="photo-hero-display"
-          src="./images/mobile/iPhone.png"
-          alt="iphone"
-          width="395px"
-          height="430px"
-        />
-
-        <img
-          class="photo-hero-mobil"
-          src="./images/mobile/main.png"
-          alt="main"
-          width="422"
-          height="456"
-        />
+        <div class="cintainer-phone">
+          <ul class="">
+            <li>
+              <img
+                class="photo-hero-display"
+                src="./images/mobile/iPhone.png"
+                alt="iphone"
+                width="430px"
+                height="460px"
+              />
+            </li>
+            <li class="blur-gradient">
+              <img
+                class="photo-hero-mobil"
+                src="./images/mobile/main.png"
+                alt="main"
+                width="459px"
+                height="489px"
+              />
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <!-- hero -->
@@ -258,7 +264,7 @@
     <!-- section 2 -->
 
     <!-- section3 -->
-    <section id="team" class="section">
+    <section id="team" class="section section-team">
       <div class="container">
         <h2 class="tittle-team">OUR TEAM</h2>
 
@@ -330,10 +336,10 @@
 
     <!-- section4 -->
 
-    <section id="testimonials" class="section">
+    <section id="testimonials" class="section section80">
       <div class="container">
         <h2 class="title-costumers">WHAT OUR COSTUMER’S SAY</h2>
-        <div>
+        <div class="div-wrapper-person">
           <img
             class="people-photo-costumers"
             src="./images/people-jon.jpg"
@@ -365,80 +371,90 @@
     <!-- section4 -->
 
     <!-- section5 -->
-    <section id="contact" class="section section-contact">
+    <section id="contact" class="section section-contact section80">
       <div class="container container-order">
         <h2 class="title-contact">CONTACT US</h2>
-        <div class="container-order-one">
-          <h3 class="title-container-one">Get in touch with us</h3>
-          <p class="text-container-one">
-            Have a question or comment about our app? Get in touch with us using
-            the contact form below and our team will respond shortly.
-          </p>
-          <ul class="list-icon-contacts">
-            <li>
-              <a class="link-icon" href="">
-                <svg class="icon-contacts-svg" width="20" height="20">
-                  <use href="./images/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="link-icon" href="">
-                <svg class="icon-contacts-svg" width="20" height="20">
-                  <use href="./images/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="link-icon" href="">
-                <svg class="icon-contacts-svg" width="20" height="20">
-                  <use href="./images/sprite.svg#linkedin-in"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-          </ul>
-        </div>
-        <div class="container-order-two">
-          <form class="form-input">
-            <label class="width">
-              <input
-                class="input-name"
-                type="text"
-                name="person name"
-                placeholder="Name"
-                pattern="[a-zA-Zа-яА-ЯіІїЇєЄёЁ' ]+"
-                required
-              />
-            </label>
+        <div class="wrapper-content-contact">
+          <div class="container-order-one">
+            <h3 class="title-container-one">Get in touch with us</h3>
+            <p class="text-container-one">
+              Have a question or comment about our app? Get in touch with us
+              using the contact form below and our team will respond shortly.
+            </p>
+            <ul class="list-icon-contacts">
+              <li>
+                <a class="link-icon" href="">
+                  <svg class="icon-contacts-svg" width="20" height="20">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="link-icon" href="">
+                  <svg class="icon-contacts-svg" width="20" height="20">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="link-icon" href="">
+                  <svg class="icon-contacts-svg" width="20" height="20">
+                    <use href="./images/sprite.svg#linkedin-in"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="contacts-data">
+              <li>
+                <a class="contacts-tel" href="tel:+110001111111"
+                  >+xx-xxxx-xxxx-xx</a
+                >
+              </li>
+              <li>
+                <a class="contacts-mail" href="mailto:goIteens@gmail.com"
+                  >goIteens@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="container-order-two">
+            <form class="form-input">
+              <!-- <label class="width label-email"></label> -->
+              <div class="input-container">
+                <input
+                  class="input-name"
+                  type="text"
+                  name="person name"
+                  placeholder="Name"
+                  pattern="[a-zA-Zа-яА-ЯіІїЇєЄёЁ' ]+"
+                  required
+                />
 
-            <label class="width">
-              <input
-                class="input-email"
-                type="email"
-                name="email person"
-                autocomplete="on"
-                placeholder="Email"
-                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                required
-              />
-            </label>
+                <!-- <label class="width label-email"> </label> -->
+                <input
+                  class="input-email"
+                  type="email"
+                  name="email person"
+                  autocomplete="on"
+                  placeholder="Email"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                  required
+                />
+              </div>
 
-            <label class="width">
-              <textarea
-                class="textarea"
-                name="user message (feedback)"
-                placeholder="Message"
-              ></textarea>
-            </label>
+              <label class="width label-texteria">
+                <textarea
+                  class="textarea"
+                  name="user message (feedback)"
+                  placeholder="Message"
+                ></textarea>
+              </label>
 
-            <button class="button-gradient button-submit" type="submit">
-              SUBMIT
-            </button>
-          </form>
+              <button class="button-gradient button-submit" type="submit">
+                SUBMIT
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
