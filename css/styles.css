@@ -1765,8 +1765,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 568px;
-  height: 936px;
+  /* width: 568px;
+  height: 936px; */
   overflow-y: auto;
   max-height: 100vh;
 }
@@ -1859,6 +1859,7 @@ body {
 }
 
 .text-modal-p {
+  max-width: 448px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -1869,7 +1870,7 @@ body {
 
 .container-characteristics {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-bottom: 32px;
 }
 
