@@ -106,27 +106,76 @@
               </span>
             </li>
           </ul>
-          <button class="button-download button-gradient">Download</button>
+          <button class="button-download button-gradient" data-modal-open>
+            Download
+          </button>
         </div>
-        <div class="cintainer-phone">
+        <div class="container-phone">
           <ul class="">
             <li>
-              <img
-                class="photo-hero-display"
-                src="./images/mobile/iPhone.png"
-                alt="iphone"
-                width="430px"
-                height="460px"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop1x/iPhone-herobg-desktop.png    1x,
+                    ./images/desktop2x/iPhone-herobg-desktop@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet1x/iPhone-herobg-tablet.png    1x,
+                    ./images/tablet2x/iPhone-herobg-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1279.9px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile1x/iPhone-herobg-mobil.png    1x,
+                    ./images/mobile2x/iPhone-herobg-mobil@2x.png 2x
+                  "
+                  media="(max-width: 767.9px)"
+                />
+                <img
+                  class="photo-hero-display"
+                  src="./images/desktop1x/iPhone-herobg-desktop.png"
+                  alt="iphone"
+                  width="430px"
+                  height="460px"
+                />
+              </picture>
             </li>
-            <li class="blur-gradient">
-              <img
-                class="photo-hero-mobil"
-                src="./images/mobile/main.png"
-                alt="main"
-                width="459px"
-                height="489px"
-              />
+
+            <li>
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop1x/main-herobg-desktop.png    1x,
+                    ./images/desktop2x/main-herobg-desktop@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet1x/main-herobg-tablet.png    1x,
+                    ./images/tablet2x/main-herobg-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1279.9px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile1x/main-herobg-mobile.png    1x,
+                    ./images/mobile2x/main-herobg-mobile@2x.png 2x
+                  "
+                  media="(max-width: 767.9px)"
+                />
+                <img
+                  class="photo-hero-mobil"
+                  src="./images/desktop1x/main-herobg-desktop.png"
+                  alt="main"
+                  width="459px"
+                  height="489px"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -240,22 +289,68 @@
         <div class="container-images-video">
           <ul class="list-photo-wideo">
             <li>
-              <img
-                src="./images/iPhone-wideo.png"
-                alt="phone"
-                width="266px"
-                height="128px"
-                class="photo-iphone"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop1x/iPhone-photo-content-desktop.png    1x,
+                    ./images/desktop2x/iPhone-photo-content-desktop@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet1x/iPhone-photo-content-tablet.png    1x,
+                    ./images/tablet2x/iPhone-photo-content-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1279.9px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile1x/iPhone-photo-content-mobile.png    1x,
+                    ./images/mobile2x/iPhone-photo-content-mobile@2x.png 2x
+                  "
+                  media="(max-width: 767.9px)"
+                />
+                <img
+                  src="./images/desktop1x/iPhone-photo-content-desktop.png"
+                  alt="phone"
+                  width="478px"
+                  height="234px"
+                  class="photo-iphone"
+                />
+              </picture>
             </li>
             <li>
-              <img
-                src="./images/main-wideo.png"
-                alt="phone"
-                width="279px"
-                height="143px"
-                class="photo-main"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop1x/main-photo-content-desktop.png    1x,
+                    ./images/desktop2x/main-photo-content-desktop@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet1x/main-photo-content-tablet.png    1x,
+                    ./images/tablet2x/main-photo-content-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1279.9px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile1x/main-photo-content-mobile.png    1x,
+                    ./images/mobile2x/main-photo-content-mobile@2x.png 2x
+                  "
+                  media="(max-width: 767.9px)"
+                />
+                <img
+                  src="./images/desktop1x/main-photo-content-desktop.png"
+                  alt="phone"
+                  width="501px"
+                  height="261px"
+                  class="photo-main"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -277,52 +372,148 @@
 
         <ul class="team-list">
           <li class="lists-people">
-            <img
-              class="people-card"
-              src="./images/team/david.jpg"
-              alt="people workers"
-              width="264px"
-              height="260px"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/desktop1x/david-desktop.jpg    1x,
+                  ./images/desktop2x/david-desktop@2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet1x/david-tablet.jpg    1x,
+                  ./images/tablet2x/david-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px) and (max-width: 1279.9px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile1x/david-mobile.jpg    1x,
+                  ./images/mobile2x/david-mobile@2x.jpg 2x
+                "
+                media="(max-width: 767.9px)"
+              />
+              <img
+                class="people-card"
+                src="./images/desktop1x/david-desktop.jpg"
+                alt="people workers"
+                width="264px"
+                height="260px"
+              />
+            </picture>
+
             <div class="worker">
               <p class="name-people">David Patel</p>
               <p class="name-position">Managing Direcor</p>
             </div>
           </li>
           <li class="lists-people">
-            <img
-              class="people-card"
-              src="./images/team/rachel.jpg"
-              alt="people workers"
-              width="264px"
-              height="260px"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/desktop1x/rachel-desktop.jpg    1x,
+                  ./images/desktop2x/rachel-desktop@2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet1x/rechel-tablet.jpg    1x,
+                  ./images/tablet2x/rechel-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px) and (max-width: 1279.9px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile1x/rechel-mobile.jpg    1x,
+                  ./images/mobile2x/rechel-mobile@2x.jpg 2x
+                "
+                media="(max-width: 767.9px)"
+              />
+              <img
+                class="people-card"
+                src="./images/desktop1x/rachel-desktop.jpg"
+                alt="people workers"
+                width="264px"
+                height="260px"
+              />
+            </picture>
+
             <div class="worker">
               <p class="name-people">Rachel Kim</p>
               <p class="name-position">Lead Designer</p>
             </div>
           </li>
           <li class="lists-people">
-            <img
-              class="people-card"
-              src="./images/team/samantha.jpg"
-              alt="people workers"
-              width="264px"
-              height="260px"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/desktop1x/samanta-desktop.jpg    1x,
+                  ./images/desktop2x/samanta-desktop@2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet1x/samanta-tablet.jpg    1x,
+                  ./images/tablet2x/samanta-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px) and (max-width: 1279.9px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile1x/samanta-mobile.jpg    1x,
+                  ./images/mobile2x/samanta-mobile@2x.jpg 2x
+                "
+                media="(max-width: 767.9px)"
+              />
+              <img
+                class="people-card"
+                src="./images/desktop1x/samanta-desktop.jpg"
+                alt="people workers"
+                width="264px"
+                height="260px"
+              />
+            </picture>
+
             <div class="worker">
               <p class="name-people">Samantha Chen</p>
               <p class="name-position">Lead Developer</p>
             </div>
           </li>
           <li class="lists-people">
-            <img
-              class="people-card"
-              src="./images/team/andrew.jpg"
-              alt="people workers"
-              width="264px"
-              height="260px"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/desktop1x/andrev-desktop.jpg    1x,
+                  ./images/desktop2x/andrev-desktop@2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet1x/andrew-tablet.jpg    1x,
+                  ./images/tablet2x/andrew-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px) and (max-width: 1279.9px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile1x/andrew-mobile.jpg    1x,
+                  ./images/mobile2x/andrew-mobile@2x.jpg 2x
+                "
+                media="(max-width: 767.9px)"
+              />
+              <img
+                class="people-card"
+                src="./images/desktop1x/andrev-desktop.jpg"
+                alt="people workers"
+                width="264px"
+                height="260px"
+              />
+            </picture>
+
             <div class="worker">
               <p class="name-people">Andrew Nguyen</p>
               <p class="name-position">Sr. UI Designer</p>
@@ -341,8 +532,12 @@
         <h2 class="title-costumers">WHAT OUR COSTUMER’S SAY</h2>
         <div class="div-wrapper-person">
           <img
+            srcset="
+              ./images/desktop1x/jon-desktop.jpg    1x,
+              ./images/desktop2x/jon-desktop@2x.jpg 2x
+            "
             class="people-photo-costumers"
-            src="./images/people-jon.jpg"
+            src="./images/desktop1x/jon-desktop.jpg"
             alt="Company icon Jon"
             width="181px"
             height="181px"
@@ -470,6 +665,105 @@
     </footer>
     <!-- footer -->
 
+    <!-- modal-window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="button-close-modal" data-modal-close>
+          <svg width="15.6px" height="15.6px">
+            <use href="./images/sprite.svg#close-bakdrop"></use>
+          </svg>
+        </button>
+        <p class="text-modal">Download</p>
+
+        <div class="container-download">
+          <div class="container-one-download">
+            <svg width="80" height="106">
+              <use href="./images/sprite.svg#download"></use>
+              <p class="text-container">Download free plan</p>
+              <ul class="list-offers">
+                <li><span class="text-offers">Basic functionality</span></li>
+                <li><span class="text-offers">Limited access</span></li>
+                <li><span class="text-offers">Community support</span></li>
+              </ul>
+            </svg>
+          </div>
+          <div class="container-two-download">
+            <svg width="80" height="106">
+              <use href="./images/sprite.svg#download"></use>
+              <p class="text-container">Download for 20$</p>
+              <ul class="list-offers">
+                <li><span class="text-offers">Ad-free experience</span></li>
+                <li>
+                  <span class="text-offers">Unlock exclusive features</span>
+                </li>
+                <li>
+                  <span class="text-offers">
+                    Content for the ultimate mobile experience
+                  </span>
+                </li>
+              </ul>
+            </svg>
+          </div>
+        </div>
+        <p class="text-modal-p">
+          Nunc vulputate nibh sed congue facilisis. Curabitur posuere
+          scelerisque neque. In sit amet lectus non lacus
+        </p>
+        <div class="container-characteristics">
+          <div class="container-characteristics-one">
+            <ul class="list-characteristics-one">
+              <li class="list-one">
+                <p class="text-characteristics">
+                  App name<span class="text-color">Mobileapp.layout</span>
+                </p>
+              </li>
+              <li class="list-one">
+                <p class="text-characteristics">
+                  License<span class="text-color">Free</span>
+                </p>
+              </li>
+              <li class="list-one">
+                <p class="text-characteristics">
+                  Author<span class="text-color">Mobile Marrket App.com</span>
+                </p>
+              </li>
+              <li class="list-one">
+                <p class="text-characteristics">
+                  Data<span class="text-color">21.02.2022</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="container-characteristics-two">
+            <ul class="list-characteristics-two">
+              <li class="list-two">
+                <p class="text-characteristics">
+                  OC<span class="text-color">Windows</span>
+                </p>
+              </li>
+              <li class="list-two">
+                <p class="text-characteristics">
+                  Language<span class="text-color">English</span>
+                </p>
+              </li>
+              <li class="list-two">
+                <p class="text-characteristics">
+                  Size<span class="text-color">4.16 MB</span>
+                </p>
+              </li>
+              <li class="list-two">
+                <p class="text-characteristics">
+                  Downloads<span class="text-color">964</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" download="" class="button-modal-download">Download</a>
+      </div>
+    </div>
+    <!-- modal-window -->
+    <script src="./js/modal.js"></script>
     <script src="./js/modal-menu.js"></script>
   </body>
 </html>
