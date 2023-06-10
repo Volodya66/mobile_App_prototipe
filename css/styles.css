@@ -1822,23 +1822,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* width: 568px;
-  height: 936px; */
+
   overflow-y: auto;
   max-height: 100vh;
 }
 
 .modal {
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-
-  /* width: 568px;
-  height: 936px; */
-
-  /* padding: 32px 40px; */
-
   background-color: var(--background-section);
 }
 
@@ -1878,7 +1867,6 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  /* padding: 28px 26px; */
 
   border: double 1px transparent;
   border-radius: 6px;
@@ -1890,13 +1878,6 @@ body {
   transition: background-image 500ms linear;
 }
 
-/* .container-one-download:hover,
-.container-two-download:focus {
-  border-color: transparent;
-  background-image: var(--linear-gradient);
-  transition: background-image 500ms linear;
-} */
-
 .text-container {
   color: var(--white-color);
   font-size: 14px;
@@ -1907,6 +1888,26 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 14px;
+}
+
+.list-free-plan,
+.list-for-money {
+  display: flex;
+  column-gap: 4px;
+}
+
+.svg-modal-checkbox {
+  display: flex;
+
+  position: relative;
+  top: 2px;
+}
+
+.label-checkbox {
+  display: flex;
+  column-gap: 4px;
+
+  position: relative;
 }
 
 .text-offers {
@@ -1927,7 +1928,7 @@ body {
 
 .container-characteristics {
   display: flex;
-  /* flex-wrap: wrap; */
+
   margin-bottom: 32px;
   position: relative;
 }
