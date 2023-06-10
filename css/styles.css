@@ -1865,12 +1865,12 @@ body {
   transition: background-image 500ms linear;
 }
 
-.container-one-download:hover,
-.container-two-download:hover {
+/* .container-one-download:hover,
+.container-two-download:focus {
   border-color: transparent;
   background-image: var(--linear-gradient);
   transition: background-image 500ms linear;
-}
+} */
 
 .text-container {
   color: var(--white-color);
@@ -2146,5 +2146,14 @@ body {
     height: 100%;
     width: 2px;
     left: 50%;
+  }
+
+  .container-one-download:hover,
+  .container-one-download:focus,
+  .container-two-download:hover,
+  .container-two-download:focus {
+    border-color: transparent;
+    background-image: var(--linear-gradient);
+    /* transition: background-image 500ms linear; */
   }
 }
