@@ -316,6 +316,15 @@ body {
 
 /*section1 */
 
+.section-futures {
+  background: linear-gradient(
+    to right top,
+    rgba(0, 197, 235, 0.25),
+    rgba(61, 153, 241, 0.16),
+    rgba(181, 68, 254, 0.25)
+  );
+}
+
 .sections-futures-title {
   font-weight: 700;
   color: var(--dark-color);
@@ -402,6 +411,15 @@ body {
 
 /* section3 */
 
+.section-team {
+  background: linear-gradient(
+    to right top,
+    rgba(0, 197, 235, 0.25),
+    rgba(61, 153, 241, 0.16),
+    rgba(181, 68, 254, 0.25)
+  );
+}
+
 .tittle-team {
   font-weight: 700;
   text-align: center;
@@ -463,7 +481,14 @@ body {
 /* section3 */
 
 /* section 4 */
-
+.section-costumers {
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 197, 235, 0.25),
+    rgba(61, 153, 241, 0.16),
+    rgba(181, 68, 254, 0.25)
+  );
+}
 .title-costumers {
   font-weight: 700;
   text-align: center;
