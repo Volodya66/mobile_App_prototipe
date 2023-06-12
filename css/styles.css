@@ -1535,10 +1535,10 @@ body {
 }
 
 @media screen and (min-width: 1280px) {
-  .button-gradient:hover,
+  /* .button-gradient:hover,
   .button-gradient:focus {
     background: transparent;
-  }
+  } */
 
   .button-gradient:active {
     background-image: var(--linear-gradient);
@@ -2173,13 +2173,13 @@ body {
     width: 2px;
     left: 50%;
   }
-
+  /* 
   .container-one-download:hover,
   .container-one-download:focus,
   .container-two-download:hover,
   .container-two-download:focus {
     border-color: transparent;
     background-image: var(--linear-gradient);
-    /* transition: background-image 500ms linear; */
-  }
+     transition: background-image 500ms linear; 
+  } */
 }
