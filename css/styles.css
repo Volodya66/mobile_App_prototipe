@@ -87,6 +87,7 @@ a {
 
 .button-gradient:hover::before {
   content: "";
+  outline: none;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1821,17 +1822,20 @@ body {
 /* backdrop */
 .backdrop {
   position: fixed;
-  z-index: 999;
+  z-index: 9992;
   top: 0;
   left: 0;
- 
-  width: 100vw;
+  top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  /* width: 100vw; */
   height: 100vh;
 }
 
 .modal {
+  width: auto;
   overflow-y: auto;
-  height: 90vh;
+  max-height: 900px;
 position: relative;
     top: 50%;
       left: 50%;
@@ -2100,7 +2104,7 @@ position: relative;
   color: #1ab9fd;
 }
 
-.button-modal-download {
+/* .button-modal-download {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -2113,24 +2117,57 @@ position: relative;
   color: var(--white-color);
   padding: 11px 60px 12px 61px;
 
-  border: double 1px transparent;
+  border: solid  2px var(--linear-gradient);
   border-radius: 5px;
 
   background-image: var(--linear-gradient);
-}
+} */
 
-.button-modal-download:active {
-  background-image: var(--linear-gradient);
-}
-
+/* .button-modal-download:active { */
+  /* background-image: var(--linear-gradient); */
+/* } */
+/* 
 .button-modal-download:hover,
 .button-modal-download:focus {
-  border: double 1px transparent;
+  border: solid 1px transparent;
   border-radius: 5px;
   background-image: linear-gradient(rgba(6, 7, 27, 1), rgba(6, 7, 27, 1)),
     radial-gradient(circle at top left, #00c5eb, #b544fe);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+} */
+.button-modal-download {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--white-color);
+  padding: 11px 60px 12px 61px;
+  border: solid 1px transparent;
+  border-radius: 5px;
+  background-image: var(--linear-gradient);
+  transition: background 0.3s ease;
+  box-shadow: 0 0 0 2px transparent;
+  /* Фіксована товщина box-shadow */
+}
+
+.button-modal-download:hover,
+.button-modal-download:focus {
+  /* outline: solid 1px var(--linear-gradient); */
+  /* Змінено товщину outline */
+  background: linear-gradient(rgba(6, 7, 27, 1), rgba(6, 7, 27, 1)),
+    radial-gradient(circle at top left, #00c5eb, #b544fe);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  /* box-shadow: 0 0 0 2px var(--linear-gradient); */
+  /* Фіксована товщина box-shadow */
+}
+
+.button-modal-download:active {
+  /* background-image: var(--linear-gradient); */
 }
 /* backdrop */
 
@@ -2138,6 +2175,11 @@ position: relative;
   .text-tb-ds {
     display: none;
   }
+
+  /* .backdrop {
+height: 90vh;
+overflow-y: auto;
+} */
 
   .modal {
     width: 280px;
@@ -2214,4 +2256,14 @@ position: relative;
 ::-webkit-scrollbar-thumb {
   /* background-color: #888; */
   background-image: var(--gradient-right-bottom);
+}
+
+
+.backdrop-backdrop{
+    position: fixed;
+      z-index: 9992;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
 }

@@ -33,12 +33,29 @@
   };
 
   let isModalOpen = false;
-    refs.modal.addEventListener("click", closeModal);
+  refs.modal.addEventListener("click", closeModal);
+  window.addEventListener('keydown', handleKeyDown);
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
+ function handleKeyDown (e)  {
+     if (e.code === 'Escape' && isModalOpen) {
+         toggleModal()
+     };
+};
+    
+ 
+  document.body.style.overflow = 'hidden';
+    
     function closeModal(evt) {
-        if (evt.target === evt.currentTarget) { toggleModal() };
+        console.log(evt.currentTarget)
+        console.log(evt.target)
+        console.log(evt.code)
+        
+        if (evt.target === evt.currentTarget) {
+            console.log('hi')
+            toggleModal()
+        };
     };
     
   function toggleModal() {
