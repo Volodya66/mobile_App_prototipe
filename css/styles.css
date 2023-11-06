@@ -1840,7 +1840,7 @@ body {
 .modal {
   width: auto;
   overflow-y: auto;
-  height: 90vh;
+  max-height: 90vh;
 position: relative;
     /* top: 50%;
       left: 50%;
